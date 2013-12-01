@@ -9,10 +9,11 @@
 \usepackage{tikz}
 \setbeamertemplate{footline}[frame number]
 
-\newcommand{\cc}[1]{\includegraphics[height=4mm]{img/#1.png}}
+\newcommand{\cc}[1]{\includegraphics[height=4mm]{img/#1.png}\hspace{1mm}}
 \usepackage{ifthen}
 \newcommand{\license}[2][]{\\#2\ifthenelse{\equal{#1}{}}{}{\\\scriptsize\url{#1}}}
 \usepackage{textcomp}
+\usepackage{hyperref}
 
 \pgfdeclareimage[height=.6cm]{c3d2logo}{./img/c3d2.pdf} 
 
@@ -42,7 +43,7 @@
 \begin{frame}
   \frametitle{Chaos Computer Club}
   \begin{figure}
-    \includegraphics[height=0.7\textheight]{img/trojaner.jpg}
+    \includegraphics[height=0.7\textheight]{img/trojaner.png}
   \end{figure}
 \end{frame}
 
@@ -129,6 +130,13 @@
 \end{frame}
 
 \begin{frame}
+    \frametitle{P2P: Praxis-Beispiel: https://palava.tv}
+    \begin{center}
+      \includegraphics[width=\linewidth]{img/palava.png}
+    \end{center}
+\end{frame}
+
+\begin{frame}
     \frametitle{Was ist zu schützen?}
     \begin{center}
       \includegraphics[height=5cm]{img/fed.png}
@@ -181,6 +189,7 @@
     \frametitle{Open Source Software}
     \begin{center}
       \includegraphics[height=0.7\textheight]{img/stallman.jpg}
+      \\{\small \cc{by} Anders Brenna}
     \end{center}
 \end{frame}
 
@@ -285,13 +294,14 @@
     \frametitle{Anonymität}
     \begin{center}
       \includegraphics[height=5cm]{img/anonymous.jpg}
+      \\{\small \cc{by-sa} Vincent Diamante}
     \end{center}
 \end{frame}
 
 \begin{frame}
     \frametitle{Metadaten}
     \includegraphics[height=0.7\textheight]{img/socialgraph.jpg}
-    {\small \cc{by-sa} Michael Sean Gallagher}
+    \\{\small \cc{by-sa} Michael Sean Gallagher}
 \end{frame}
 
 \begin{frame}
@@ -302,16 +312,19 @@
 \begin{frame}
     \frametitle{TOR}
     \includegraphics[height=0.7\textheight]{img/tor1.png}
+    \\{\small \cc{by} The Tor Project}
 \end{frame}
 
 \begin{frame}
     \frametitle{TOR}
     \includegraphics[height=0.7\textheight]{img/tor2.png}
+    \\{\small \cc{by} The Tor Project}
 \end{frame}
 
 \begin{frame}
     \frametitle{TOR}
     \includegraphics[height=0.7\textheight]{img/tor3.png}
+    \\{\small \cc{by} The Tor Project}
 \end{frame}
 
 \begin{frame}
@@ -341,7 +354,8 @@
 
 \begin{frame}
     \frametitle{Zensur}
-    \includegraphics[height=0.7\textheight]{img/zensur-guardian.jpg}
+    \includegraphics[height=0.7\textheight]{img/zensur.png}
+    \\{\small \cc{by-sa} Jeff Ogden (W163)}
 \end{frame}
 
 \begin{frame}
@@ -371,6 +385,7 @@
 \begin{frame}
     \frametitle{Metadaten - Lightbeam}
     \includegraphics[height=0.7\textheight]{img/lightbeam.png}
+    \\{\small \cc{by-sa} Clint Lalonde}
 \end{frame}
 
 \begin{frame}
@@ -417,8 +432,9 @@
 
 \begin{frame}
     \frametitle{Web of Trust}
-    \begin{center}\Large
-      Web of Trust
+    \begin{center}
+      \includegraphics[height=5cm]{img/weboftrust.png}
+      \\{\small \cc{by-sa} Koichi Akabe}
     \end{center}
 \end{frame}
 
@@ -429,16 +445,28 @@
       \item<3-> OTR für Jabber:
         \begin{itemize}
           \item Pidgin mit OTR-Plugin für Linux und Windows
-          \item Adium für Mac
-          \item Xabber oder GibberBot für Android
+          \item GibberBot oder Xabber für Android
+          \item Adium für Mac, ChatSecure für iOS
         \end{itemize}
+      \item<4-> palava.tv für Videotelefonie
+      \item<5-> Redphone für Handytelefonate (Android)
+      \item<6-> TextSecure für SMS (Android)
     \end{itemize}
 \end{frame}
+
+\section{Ende}
+\subsection{}
 
 \begin{frame}
   \frametitle{Diskussion}
   \begin{center}
-    {\Large Diskussion}\\Marius Melzer \\(Twitter: @faraoso, Email und Jabber: marius@rasumi.net)\\CMS Dresden: schule@c3d2.de
+    {\Large Diskussion}\\
+    \vspace{5mm} 
+    \href{https://github.com/c3d2/cms-nsa}{Folien}: \href{https://creativecommons.org/licenses/by-sa/4.0/}{\cc{by-sa}} Marius Melzer \\
+    \vspace{4mm}
+    Twitter: @faraoso, Email und Jabber: marius@rasumi.net\\GPG-Fingerprint: 52DEFC3E\\
+    \vspace{4mm}
+    CMS Dresden: schule@c3d2.de
   \end{center}
 \end{frame}
 
